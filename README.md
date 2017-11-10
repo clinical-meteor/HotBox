@@ -1,7 +1,5 @@
-# HotBox
-![HOTBOX LOGO](http://i.imgur.com/495tedr.png)
+# ReactNativeWebRTC Demo
 
-[![npm](https://img.shields.io/npm/dt/react-native-hot-box.svg)](https://www.npmjs.com/package/react-native-hot-box)
 
 HotBox is a React Native wrapper around [TokBox OpenTOK SDK](https://tokbox.com/).
 
@@ -10,7 +8,27 @@ I tried the other React Native OpenTOK wrappers but they did not seem to work / 
 
 ## Installation
 
-### iOS
+* Make sure that you have XCode 9.1 installed (which has Swift libraries).  
+
+```sh
+# install node, npm, react-native, etc.
+brew install node
+brew install watchman
+npm install -g react-native-cli
+
+# install dependencies of app and run in simulator
+cd Example
+
+yarn install
+yarn add react-native-hot-box
+
+react-native run-ios
+
+cd ios
+pod install
+
+
+```
 
 1. `yarn add react-native-hot-box` or inferiorly `npm install --save react-native-hot-box`
 2. Add the files under `node_modules/react-native-hot-box/HotBoxService` (In Xcode: File -> Add files to "App Name")
